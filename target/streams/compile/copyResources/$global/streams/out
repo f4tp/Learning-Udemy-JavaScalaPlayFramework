@@ -1,0 +1,4 @@
+[debug] Copy resource mappings: 
+[debug] 	(D:\My Documents\Play Projects\play-essentials\conf\application.conf,D:\My Documents\Play Projects\play-essentials\target\scala-2.12\classes\application.conf)
+[debug] 	(D:\My Documents\Play Projects\play-essentials\conf\logback.xml,D:\My Documents\Play Projects\play-essentials\target\scala-2.12\classes\logback.xml)
+[debug] 	(D:\My Documents\Play Projects\play-essentials\conf\routes,D:\My Documents\Play Projects\play-essentials\target\scala-2.12\classes\routes)
