@@ -1,19 +1,19 @@
 # Routes
 
-#typical routes below
-# An example controller showing a sample home page
-#GET     /                           controllers.HomeController.index
-
-# Map static resources from the /public folder to the /assets URL path
-#GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
-
 # Get = HTTP verb| / = URI path pattern |
 #controllers.at... = action
+
+#A GET request with the URI /example will call what ever is in the exampleAction() in the given Controller
+GET     /example       controllers.ExampleController.exampleAction()
+
+POST    /example-body  controllers.ExampleController.exampleBodyAction()
+
+
 
 #when a GET request is received...
 #...on the root context
 #call the method controllers.Assets.at the given address
-GET     /       controllers.Assets.at(path="/public", file="index.html")
+GET     /               controllers.Assets.at(path="/public", file="index.html")
 
 #wildcard pattern (* below) = can be used to capture parts of the URI path
 #if a GET request come in...
@@ -22,7 +22,12 @@ GET     /       controllers.Assets.at(path="/public", file="index.html")
 #call the at method in the specified controller, with...
 #the public path, and the 'file' variable
 #doing the above allows you to view files in the public folder directly with a standard HTTP GET request
-#GET     /*file  controllers.Assets.at(path="/public", file)
+#this thing below will fault any other direct route set, so needs to be added at the bottom to be teh last
+#toute checked
+GET     /*file          controllers.Assets.at(path="/public", file)
+
+#below was used to solve the test question
+#what ever is specified as the URI is the exact thing that has to be typed to return the file at the given path
+#GET     /indexTwo.html       controllers.Assets.at(path="/public", file="indexTwo.html")
 
 
-GET     /indexTwo.html       controllers.Assets.at(path="/public", file="indexTwo.html")

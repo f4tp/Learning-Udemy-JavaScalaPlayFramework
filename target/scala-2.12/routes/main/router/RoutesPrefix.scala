@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/My Documents/Play Projects/play-essentials/conf/routes
-// @DATE:Sun May 13 10:27:31 BST 2018
+// @DATE:Sun May 13 18:23:27 BST 2018
 
 
 package router {

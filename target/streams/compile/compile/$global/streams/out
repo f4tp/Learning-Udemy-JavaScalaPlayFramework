@@ -1,9 +1,4 @@
-[warn] D:\My Documents\Play Projects\play-essentials\conf\routes:25:1: patterns after a variable pattern cannot match (SLS 8.1.1)
-[warn] If you intended to match against parameter file of method at, you must use backticks, like: case `file` =>
-[warn] GET     /*file  controllers.Assets.at(path="/public", file)
-[warn] D:\My Documents\Play Projects\play-essentials\conf\routes:28:1: unreachable code due to variable pattern 'file' on line 32
-[warn] If you intended to match against parameter file of method at, you must use backticks, like: case `file` =>
-[warn] GET     /indexTwo.html       controllers.Assets.at(path="/public", file="indexTwo.html")
-[warn] D:\My Documents\Play Projects\play-essentials\conf\routes:28:1: unreachable code
-[warn] GET     /indexTwo.html       controllers.Assets.at(path="/public", file="indexTwo.html")
-[warn] three warnings found
+[error] D:\My Documents\Play Projects\play-essentials\app\controllers\ExampleController.java:24:1: cannot find symbol
+[error]   symbol:   method printLn(java.lang.String)
+[error]   location: variable out of type java.io.PrintStream
+[error]         System.out.printLn("Json Body: " + body.asJson());
