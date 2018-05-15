@@ -1,4 +1,12 @@
-[error] D:\My Documents\Play Projects\play-essentials\app\controllers\ExampleController.java:24:1: cannot find symbol
-[error]   symbol:   method printLn(java.lang.String)
-[error]   location: variable out of type java.io.PrintStream
-[error]         System.out.printLn("Json Body: " + body.asJson());
+[error] D:\My Documents\Play Projects\play-essentials\conf\routes:20:1: method exampleAdditionAction is defined twice;
+[error]   the conflicting method exampleAdditionAction was defined at line 63:9
+[error] GET     /2plus2     controllers.ExampleController.exampleAdditionAction(a: Integer = 2, b: Integer = 2)
+[error] D:\My Documents\Play Projects\play-essentials\conf\routes:20:1: type mismatch;
+[error]  found   : Integer
+[error]  required: String
+[error] GET     /2plus2     controllers.ExampleController.exampleAdditionAction(a: Integer = 2, b: Integer = 2)
+[error] D:\My Documents\Play Projects\play-essentials\conf\routes:20:1: type mismatch;
+[error]  found   : Integer
+[error]  required: String
+[error] GET     /2plus2     controllers.ExampleController.exampleAdditionAction(a: Integer = 2, b: Integer = 2)
+[error] three errors found

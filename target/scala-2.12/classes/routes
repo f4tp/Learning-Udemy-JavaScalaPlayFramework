@@ -3,6 +3,30 @@
 # Get = HTTP verb| / = URI path pattern |
 #controllers.at... = action
 
+
+GET     /2plus2     controllers.ExampleController.exampleAddWithDefaultArgsAction(a: Integer = 2, b: Integer = 2)
+
+#e.g. localhost:9000/addingagain?c=9
+GET     /addingagain     controllers.ExampleController.exampleAddWithMissingArgAction(c: Integer, d: Integer ?= 0)
+
+#b argument if not passed will pass null instead
+#below takes an integer through the params e.g. localhost:9000/adding?a=5
+GET     /adding         controllers.ExampleController.exampleAddWithMissingArgAction(a: Integer, b: Integer ?= null)
+
+#below takes Integers passed in as params in teh HTTP request, not through the URI
+GET     /add              controllers.ExampleController.exampleAddAction(a: Integer, b: Integer)
+
+
+
+
+#arguments with variable names a and b passed in via the URI
+#below takes strings through the URI, i.e. http://localhost:9000/add/3/9
+GET     /add/:a/:b      controllers.ExampleController.exampleAdditionAction(a, b)
+
+#testing the Response object
+GET     /example-result controllers.ExampleController.exampleResultAction()
+
+
 #A GET request with the URI /example will call what ever is in the exampleAction() in the given Controller
 GET     /example       controllers.ExampleController.exampleAction()
 
