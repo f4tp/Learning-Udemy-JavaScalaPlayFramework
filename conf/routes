@@ -3,6 +3,10 @@
 # Get = HTTP verb| / = URI path pattern |
 #controllers.at... = action
 
+POST    /upload     controllers.ExampleController.uploadAction()
+GET     /ws         controllers.ExampleController.exampleWsAction()
+
+GET     /config     controllers.ExampleController.exampleConfigAction()
 
 GET     /2plus2     controllers.ExampleController.exampleAddWithDefaultArgsAction(a: Integer = 2, b: Integer = 2)
 

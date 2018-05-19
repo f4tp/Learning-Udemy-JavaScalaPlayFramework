@@ -4,7 +4,7 @@
 		module="play-essentials_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20180513090335"
+		publication="20180519103532"
 	>
 		<description>
 		play-essentials
@@ -50,5 +50,7 @@
 		<dependency org="com.typesafe.play" name="play-logback_2.12" rev="2.6.13" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-akka-http-server_2.12" rev="2.6.13" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-guice_2.12" rev="2.6.13" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ahc-ws_2.12" rev="2.6.13" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ehcache_2.12" rev="2.6.13" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

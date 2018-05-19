@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/My Documents/Play Projects/play-essentials/conf/routes
-// @DATE:Tue May 15 15:38:45 BST 2018
+// @DATE:Sat May 19 12:57:10 BST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -8,10 +8,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:7
+// @LINE:6
 package controllers.javascript {
 
-  // @LINE:7
+  // @LINE:6
   class ReverseExampleController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:7
+    // @LINE:11
     def exampleAddWithDefaultArgsAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExampleController.exampleAddWithDefaultArgsAction",
       """
@@ -29,7 +29,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:31
     def exampleResultAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExampleController.exampleResultAction",
       """
@@ -39,7 +39,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:31
+    // @LINE:35
     def exampleAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExampleController.exampleAction",
       """
@@ -49,7 +49,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:17
+    // @LINE:7
+    def exampleWsAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ExampleController.exampleWsAction",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "ws"})
+        }
+      """
+    )
+  
+    // @LINE:21
     def exampleAddAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExampleController.exampleAddAction",
       """
@@ -59,7 +69,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:6
+    def uploadAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ExampleController.uploadAction",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "upload"})
+        }
+      """
+    )
+  
+    // @LINE:28
     def exampleAdditionAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExampleController.exampleAdditionAction",
       """
@@ -69,7 +89,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:10
+    // @LINE:9
+    def exampleConfigAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ExampleController.exampleConfigAction",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "config"})
+        }
+      """
+    )
+  
+    // @LINE:14
     def exampleAddWithMissingArgAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExampleController.exampleAddWithMissingArgAction",
       """
@@ -83,7 +113,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:33
+    // @LINE:37
     def exampleBodyAction: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ExampleController.exampleBodyAction",
       """
@@ -95,7 +125,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:40
+  // @LINE:44
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -103,7 +133,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:40
+    // @LINE:44
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
